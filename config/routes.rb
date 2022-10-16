@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   get 'tags' => 'tags#index'
+  get '/tags/:id' => 'tags#show', as: :tag
 end
